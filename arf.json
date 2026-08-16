@@ -1,547 +1,94 @@
 {
   "children": [
-  {
-    "children": [
     {
       "children": [
-      {
-        "name": "Google",
-        "type": "url",
-        "url": "https://www.google.com"
-      },
-      {
-        "name": "Bing",
-        "type": "url",
-        "url": "http://www.bing.com/"
-      },
-      {
-        "name": "DuckDuckGo",
-        "type": "url",
-        "url": "https://duckduckgo.com/"
-      },
-      {
-        "name": "Yahoo Advanced Web Search",
-        "type": "url",
-        "url": "https://search.yahoo.com/web/advanced"
-      },
-    
-      {
-        "name": "Yandex",
-        "type": "url",
-        "url": "https://www.yandex.com/"
-      },
-      {
-        "name": "Baidu",
-        "type": "url",
-        "url": "http://www.baidu.com/"
-      },
-      {
-        "name": "Google Advanced Search",
-        "type": "url",
-        "url": "https://www.google.com/advanced_search"
-      },
-     
-      {
-        "name": "GHDB -google hacking database",
-        "type": "url",
-        "url": "https://www.exploit-db.com/google-hacking-database/"
-      }],
-      "name": "Search Engines",
+        {
+          "name": "OWASP Top 10",
+          "type": "url",
+          "url": "https://owasp.org/www-project-top-ten/"
+        },
+        {
+          "name": "Burp Suite",
+          "type": "url",
+          "url": "https://portswigger.net/burp"
+        },
+        {
+          "name": "ZAPROXY",
+          "type": "url",
+          "url": "https://www.zaproxy.org/"
+        },
+        {
+          "name": "Nikto",
+          "type": "url",
+          "url": "https://cirt.net/nikto2"
+        }
+      ],
+      "name": "Web Application",
       "type": "folder"
     },
     {
       "children": [
-     
-      {
-        "name": "Netcraft ",
-        "type": "url",
-        "url": "https://www.netcraft.com/tools/"
-      },
-	   {
-        "name": "Whois ",
-        "type": "url",
-        "url": "https://www.netcraft.com/tools/"
-      },
-	   {
-        "name": "Sublist3r ",
-        "type": "url",
-        "url": "https://www.netcraft.com/tools/"
-      }	],
-      "name": "Domain Search ",
-      "type": "folder"
-    },
-	{
-      "children": [
-     
-      {
-        "name": "Google Maps",
-        "type": "url",
-        "url": "http://pgp.mit.edu/"
-      },
-	  {
-        "name": "wikimapia",
-        "type": "url",
-        "url": "http://pgp.mit.edu/"
-      },
-	  {
-        "name": "yahoo Maps",
-        "type": "url",
-        "url": "http://pgp.mit.edu/"
-      },
-	  {
-        "name": "Bing Maps",
-        "type": "url",
-        "url": "http://pgp.mit.edu/"
-      },
-	  {
-        "name": "National Geography Maps",
-        "type": "url",
-        "url": "http://pgp.mit.edu/"
-      }],
-      "name": "Geographical location",
-      "type": "folder"
-    },
-	  {
-      "children": [
-     
-      {
-        "name": "MIT PGP Key Server",
-        "type": "url",
-        "url": "http://pgp.mit.edu/"
-      }],
-      "name": "Website FootPrinting ",
-      "type": "folder"
-    },
-	{
-      "children": [
-     
-      {
-        "name": "OSINT Framework",
-        "type": "url",
-        "url": "https://osintframework.com/"
-      }],
-      "name": "OSINT Framework ",
-      "type": "folder"
-    }],
-    "name": "FootPrinting & Reconnassaince",
-    "type": "folder"
-  },
-  {
-    "children": [
-   
-       
-    {
-      "children": [
-      {
-        "name": "DNS Blackhole Lists",
-        "type": "url",
-        "url": "http://www.tcpiputils.com/dns-blackhole-list"
-      }],
-      "name": "Spam Reputation Lists",
+        {
+          "name": "WHOIS Lookup",
+          "type": "url",
+          "url": "https://www.whois.com/"
+        },
+        {
+          "name": "DNSdumpster",
+          "type": "url",
+          "url": "https://dnsdumpster.com/"
+        },
+        {
+          "name": "VirusTotal DNS",
+          "type": "url",
+          "url": "https://www.virustotal.com/gui/home/upload"
+        },
+        {
+          "name": "Netcraft",
+          "type": "url",
+          "url": "https://www.netcraft.com/"
+        },
+        {
+          "name": "Reverse IP Lookup",
+          "type": "url",
+          "url": "https://www.abuseipdb.com/"
+        }
+      ],
+      "name": "Domain / DNS",
       "type": "folder"
     },
     {
       "children": [
-      {
-        "name": "MxToolbox",
-        "type": "url",
-        "url": "http://mxtoolbox.com/"
-      }],
-      "name": "Mail Blacklists",
+        {
+          "name": "Nessus",
+          "type": "url",
+          "url": "https://www.tenable.com/products/nessus"
+        },
+        {
+          "name": "OpenVAS",
+          "type": "url",
+          "url": "https://www.openvas.org/"
+        },
+        {
+          "name": "Nmap",
+          "type": "url",
+          "url": "https://nmap.org/"
+        },
+        {
+          "name": "Qualys",
+          "type": "url",
+          "url": "https://www.qualys.com/vulnerability-management/"
+        },
+        {
+          "name": "Rapid7 InsightVM",
+          "type": "url",
+          "url": "https://www.rapid7.com/products/insightvm/"
+        }
+      ],
+      "name": "Vulnerability Scanning",
       "type": "folder"
-    }],
-    "name": "Scanning Networks",
-    "type": "folder"
-  },
-  {
-    "children": [
-    
-    
-    {
-      "children": [
-      
-      {
-        "name": "Hunting-New-Registered-Domains (T)",
-        "type": "url",
-        "url": "https://github.com/gfek/Hunting-New-Registered-Domains"
-      }],
-      "name": "Tools",
-      "type": "folder"
-    }],
-    "name": "Enumeration",
-    "type": "folder"
-  },
-  
-  {
-    "children": [
-    
-    
-    {
-      "children": [
-      
-      {
-        "name": "Hunting-New-Registered-Domains (T)",
-        "type": "url",
-        "url": "https://github.com/gfek/Hunting-New-Registered-Domains"
-      }],
-      "name": "Tools",
-      "type": "folder"
-    }],
-    "name": "Vulnerability Analysis",
-    "type": "folder"
-  },
-  
-  {
-    "children": [
-    
-    
-    {
-      "children": [
-      
-      {
-        "name": "Hunting-New-Registered-Domains (T)",
-        "type": "url",
-        "url": "https://github.com/gfek/Hunting-New-Registered-Domains"
-      }],
-      "name": "Tools",
-      "type": "folder"
-    }],
-    "name": "System Hacking ",
-    "type": "folder"
-  },
-  
-  {
-    "children": [
-    
-    
-    {
-      "children": [
-      
-      {
-        "name": "Hunting-New-Registered-Domains (T)",
-        "type": "url",
-        "url": "https://github.com/gfek/Hunting-New-Registered-Domains"
-      }],
-      "name": "Tools",
-      "type": "folder"
-    }],
-    "name": "Malware Threats",
-    "type": "folder"
-  },
-  {
-    "children": [
-    
-    
-    {
-      "children": [
-      
-      {
-        "name": "Hunting-New-Registered-Domains (T)",
-        "type": "url",
-        "url": "https://github.com/gfek/Hunting-New-Registered-Domains"
-      }],
-      "name": "Tools",
-      "type": "folder"
-    }],
-    "name": "Sniffing",
-    "type": "folder"
-  },
-  
-  {
-    "children": [
-    
-    
-    {
-      "children": [
-      
-      {
-        "name": "Hunting-New-Registered-Domains (T)",
-        "type": "url",
-        "url": "https://github.com/gfek/Hunting-New-Registered-Domains"
-      }],
-      "name": "Tools",
-      "type": "folder"
-    }],
-    "name": "Social Engineering",
-    "type": "folder"
-  },
-  {
-    "children": [
-    
-    
-    {
-      "children": [
-      
-      {
-        "name": "Hunting-New-Registered-Domains (T)",
-        "type": "url",
-        "url": "https://github.com/gfek/Hunting-New-Registered-Domains"
-      }],
-      "name": "Tools",
-      "type": "folder"
-    }],
-    "name": "Denial of Service",
-    "type": "folder"
-  },
-  
-  {
-    "children": [
-    
-    
-    {
-      "children": [
-      
-      {
-        "name": "Hunting-New-Registered-Domains (T)",
-        "type": "url",
-        "url": "https://github.com/gfek/Hunting-New-Registered-Domains"
-      }],
-      "name": "Tools",
-      "type": "folder"
-    }],
-    "name": "Session Hijacking",
-    "type": "folder"
-  },
-  {
-    "children": [
-    
-    
-    {
-      "children": [
-      
-      {
-        "name": "Hunting-New-Registered-Domains (T)",
-        "type": "url",
-        "url": "https://github.com/gfek/Hunting-New-Registered-Domains"
-      }],
-      "name": "Tools",
-      "type": "folder"
-    }],
-    "name": "Evading firewalls ids honeypots",
-    "type": "folder"
-  },
-  
-  {
-    "children": [
-    
-    
-    {
-      "children": [
-      
-      {
-        "name": "Hunting-New-Registered-Domains (T)",
-        "type": "url",
-        "url": "https://github.com/gfek/Hunting-New-Registered-Domains"
-      }],
-      "name": "Tools",
-      "type": "folder"
-    }],
-    "name": "Hacking Web Servers ",
-    "type": "folder"
-  },
-  
-  {
-    "children": [
-    
-    
-    {
-      "children": [
-      
-      {
-        "name": "Hunting-New-Registered-Domains (T)",
-        "type": "url",
-        "url": "https://github.com/gfek/Hunting-New-Registered-Domains"
-      }],
-      "name": "Tools",
-      "type": "folder"
-    }],
-    "name": "Hacking Web Apps ",
-    "type": "folder"
-  },
-  {
-    "children": [
-    
-    
-    {
-      "children": [
-      
-      {
-        "name": "Hunting-New-Registered-Domains (T)",
-        "type": "url",
-        "url": "https://github.com/gfek/Hunting-New-Registered-Domains"
-      }],
-      "name": "Tools",
-      "type": "folder"
-    }],
-    "name": "SQL Injection ",
-    "type": "folder"
-  },
-  
-  {
-    "children": [
-    
-    
-    {
-      "children": [
-      
-      {
-        "name": "Hunting-New-Registered-Domains (T)",
-        "type": "url",
-        "url": "https://github.com/gfek/Hunting-New-Registered-Domains"
-      }],
-      "name": "Tools",
-      "type": "folder"
-    }],
-    "name": "Hacking wireless Networks",
-    "type": "folder"
-  },
-  {
-    "children": [
-    
-    
-    {
-      "children": [
-      
-      {
-        "name": "Hunting-New-Registered-Domains (T)",
-        "type": "url",
-        "url": "https://github.com/gfek/Hunting-New-Registered-Domains"
-      }],
-      "name": "Tools",
-      "type": "folder"
-    }],
-    "name": "Hacking mobile platforms",
-    "type": "folder"
-  },
-  {
-    "children": [
-    
-    
-    {
-      "children": [
-      
-      {
-        "name": "Hunting-New-Registered-Domains (T)",
-        "type": "url",
-        "url": "https://github.com/gfek/Hunting-New-Registered-Domains"
-      }],
-      "name": "Tools",
-      "type": "folder"
-    }],
-    "name": "IOT Hacking",
-    "type": "folder"
-  },
-  {
-    "children": [
-    
-    
-    {
-      "children": [
-      
-      {
-        "name": "Hunting-New-Registered-Domains (T)",
-        "type": "url",
-        "url": "https://github.com/gfek/Hunting-New-Registered-Domains"
-      }],
-      "name": "Tools",
-      "type": "folder"
-    }],
-    "name": "Cloud Computing",
-    "type": "folder"
-  },
-  {
-    "children": [
-    {
-      "children": [
-      
-      {
-        "name": "MD5 calculator",
-        "type": "url",
-        "url": "https://www.bullzip.com/download/md5/md5calc(1.0.0.0).zip"
-      },
-	   {
-        "name": "HashCalc",
-        "type": "url",
-        "url": "https://www.slavasoft.com/zip/hashcalc.zip"
-      },
-	     {
-        "name": "Online Hash Calculator",
-        "type": "url",
-        "url": "https://www.digitalvolcano.co.uk/download/HashTool_setup_1.2.1.exe"
-      },
-	      {
-        "name": "Hash Tool",
-        "type": "url",
-        "url": "http://onlinemd5.com/"
-      },
-	   {
-        "name": "HTML5 File Hash Online Calculator",
-        "type": "url",
-        "url": "https://md5file.com/calculator"
-      },
-	   {
-        "name": "Hash my files",
-        "type": "url",
-        "url": "https://www.nirsoft.net/utils/hashmyfiles-x64.zip"
-      }],
-      "name": "Hash Calculators",
-      "type": "folder"
-    },
-	{
-      "children": [
-     
-      {
-        "name": "Hash Droid",
-        "type": "url",
-        "url": "https://play.google.com/store/apps/details?id=com.hobbyone.HashDroid&hl=en_IN"
-      },
-	   {
-        "name": "Hash Calc",
-        "type": "url",
-        "url": "https://play.google.com/store/apps/details?id=com.gmail.kevinhhldev.hashcalc&hl=en_IN"
-      }],
-      "name": "Hash calculators (mobile)",
-      "type": "folder"
-    },
-   	{
-      "children": [
-     
-      {
-        "name": "Advanced Encryption Package 2017",
-        "type": "url",
-        "url": "http://www.aeppro.com/download/aep_setup.msi"
-      },
-	   {
-        "name": "BCTextEncoder",
-        "type": "url",
-        "url": "https://www.jetico.com/download/bctextencoder"
-      },
-	     {
-        "name": "AxCrypt",
-        "type": "url",
-        "url": "https://www.axcrypt.net/downloads/4519/"
-      },
-	   {
-        "name": "CRYPTAINER LE Free",
-        "type": "url",
-        "url": "https://www.cypherix.com/download/cryle14.0.exe"
-      },
-	  {
-        "name": "Steganos Safe 21",
-        "type": "url",
-        "url": "https://www.steganos.com/en/products/steganos-safe-21/download"
-      }],
-      "name": "Cryptography Tools",
-      "type": "folder"
-    },
-    {
-      "name": "Smart Questions",
-      "type": "url",
-      "url": "http://www.catb.org/esr/faqs/smart-questions.html"
-    }],
-    "name": "Cryptography",
-    "type": "folder"
-  }],
-  "name": "Hacking Tools",
+    }
+  ],
+  "name": "Briefcase",
   "type": "folder"
 }

@@ -153,12 +153,21 @@
     /* ── Footer ─────────────────────────────────── */
     footer{
       border-top:1px solid var(--line);
-      padding:18px 32px;
+      padding:24px 32px;
       max-width:1200px;
       margin:0 auto;
-      font-family:var(--mono);
-      font-size:.78rem;
+      font-family:var(--sans);
+      font-size:.9rem;
       color:var(--text-dim);
+    }
+    footer p{
+      margin:0 0 10px;
+      line-height:1.5;
+    }
+    footer p:last-child{ margin-bottom:0; }
+    footer strong{ color:var(--text); font-weight:600; }
+    footer .contact{
+      margin-top:12px;
     }
 
     @media (prefers-reduced-motion: reduce){
@@ -181,13 +190,7 @@
 
   <script src="js/arf.js"></script>
 
-  <div class="panel-wrap">
-    <section class="panel legend">
-      <h3>Disclaimer</h3>
-      <p>The tools listed here — open source or commercial — are <strong>not developed by me</strong>. Only this framework and its categorization are my work.</p>
-      <p>This site is inspired by the <strong>OSINT Framework</strong>. Use these tools responsibly and only on systems you are authorized to test.</p>
-    </section>
-
+  <div class="panel-wrap" style="grid-template-columns:1fr;">
     <section class="panel">
       <h3>About &amp; Contact</h3>
       <p>This framework is built and maintained by <strong>Shubham Kumar</strong>. Suggestions for new tools or categories are welcome.</p>
@@ -197,7 +200,10 @@
     </section>
   </div>
 
-  <footer>ethical-hacking-tools-framework · for authorized security testing &amp; education only</footer>
+  <footer>
+    <p><strong>Disclaimer:</strong> The tools listed here — open source or commercial — are <strong>not developed by me</strong>. Only this framework and its categorization are my work. Use these tools responsibly and only on systems you are authorized to test.</p>
+    <p>ethical-hacking-tools-framework · for authorized security testing &amp; education only</p>
+  </footer>
 
 </body>
 </html>
