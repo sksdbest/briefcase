@@ -1,32 +1,203 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <link type="text/css" rel="stylesheet" href="css/arf.css"/>
-    <script type="text/javascript" src="js/d3.v3.min.js"></script>
-    <title>Ethical Hacking Tools</title>
-  </head>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Ethical Hacking Tools Framework — a curated, categorized map of security tools, inspired by OSINT Framework."/>
+  <title>Ethical Hacking Tools Framework</title>
 
-  <body>
-    <div id="body">
-      <div id="header">
-        Ethical Hacking Tools
-          <hr/>
+  <!-- Original framework assets (unchanged) -->
+  <link type="text/css" rel="stylesheet" href="css/arf.css"/>
+  <script type="text/javascript" src="js/d3.v3.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:        #0d1117;
+      --bg-panel:  #141b23;
+      --line:      #22303c;
+      --text:      #d7e1ea;
+      --text-dim:  #8b98a5;
+      --accent:    #3ddc97;   /* phosphor green, used sparingly */
+      --accent-2:  #e8b339;   /* warning-amber for notes */
+      --mono:      "IBM Plex Mono", ui-monospace, monospace;
+      --sans:      "IBM Plex Sans", system-ui, sans-serif;
+    }
+
+    *{ box-sizing:border-box; }
+
+    html,body{ margin:0; padding:0; }
+
+    body{
+      background:var(--bg);
+      color:var(--text);
+      font-family:var(--sans);
+      font-size:16px;
+      line-height:1.6;
+    }
+
+    /* ── Header ─────────────────────────────────── */
+    #header{
+      font-family:var(--mono);
+      font-size:clamp(1.4rem, 3.5vw, 2.1rem);
+      font-weight:600;
+      letter-spacing:.02em;
+      color:var(--text);
+      padding:28px 32px 0;
+      max-width:1200px;
+      margin:0 auto;
+    }
+    #header::before{
+      content:"~$ ";
+      color:var(--accent);
+    }
+    #header hr{
+      border:none;
+      border-top:1px solid var(--line);
+      margin:20px 0 0;
+    }
+
+    .tagline{
+      max-width:1200px;
+      margin:10px auto 0;
+      padding:0 32px;
+      font-family:var(--mono);
+      font-size:.85rem;
+      color:var(--text-dim);
+    }
+    .tagline .ok{ color:var(--accent); }
+
+    /* ── Tree canvas ────────────────────────────── */
+    #body{
+      max-width:1200px;
+      margin:0 auto;
+      min-height:60vh;
+      overflow-x:auto;
+    }
+    /* d3 tree readability on dark bg */
+    #body svg text{ fill:var(--text); font-family:var(--mono); }
+    #body svg .link, #body svg path{ stroke:var(--line); }
+
+    /* ── Info panels ────────────────────────────── */
+    .panel-wrap{
+      max-width:1200px;
+      margin:48px auto 64px;
+      padding:0 32px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+    }
+    @media (max-width:760px){
+      .panel-wrap{ grid-template-columns:1fr; }
+      #header, .tagline{ padding-left:20px; padding-right:20px; }
+      .panel-wrap{ padding:0 20px; }
+    }
+
+    .panel{
+      background:var(--bg-panel);
+      border:1px solid var(--line);
+      border-radius:8px;
+      padding:22px 24px;
+    }
+    .panel h3{
+      margin:0 0 10px;
+      font-family:var(--mono);
+      font-size:.8rem;
+      font-weight:600;
+      text-transform:uppercase;
+      letter-spacing:.14em;
+      color:var(--accent-2);
+    }
+    .panel p{
+      margin:0 0 12px;
+      color:var(--text-dim);
+      font-size:.95rem;
+    }
+    .panel p:last-child{ margin-bottom:0; }
+    .panel strong{ color:var(--text); font-weight:600; }
+
+    /* ── Contact buttons ────────────────────────── */
+    .contact{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:16px;
+    }
+    .contact a{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      font-family:var(--mono);
+      font-size:.85rem;
+      font-weight:500;
+      color:var(--text);
+      text-decoration:none;
+      background:transparent;
+      border:1px solid var(--line);
+      border-radius:6px;
+      padding:9px 16px;
+      transition:border-color .15s ease, color .15s ease;
+    }
+    .contact a:hover, .contact a:focus-visible{
+      border-color:var(--accent);
+      color:var(--accent);
+      outline:none;
+    }
+    .contact a::before{
+      content:"›";
+      color:var(--accent);
+    }
+
+    /* ── Footer ─────────────────────────────────── */
+    footer{
+      border-top:1px solid var(--line);
+      padding:18px 32px;
+      max-width:1200px;
+      margin:0 auto;
+      font-family:var(--mono);
+      font-size:.78rem;
+      color:var(--text-dim);
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      *{ transition:none !important; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="header">
+    Ethical Hacking Tools
+    <hr/>
+  </div>
+
+  <p class="tagline"><span class="ok">[ok]</span> curated framework of security tools · click a node to expand</p>
+
+  <!-- D3 tree renders inside #body (arf.js) -->
+  <div id="body"></div>
+
+  <script src="js/arf.js"></script>
+
+  <div class="panel-wrap">
+    <section class="panel legend">
+      <h3>Disclaimer</h3>
+      <p>The tools listed here — open source or commercial — are <strong>not developed by me</strong>. Only this framework and its categorization are my work.</p>
+      <p>This site is inspired by the <strong>OSINT Framework</strong>. Use these tools responsibly and only on systems you are authorized to test.</p>
+    </section>
+
+    <section class="panel">
+      <h3>About &amp; Contact</h3>
+      <p>This framework is built and maintained by <strong>Shubham Kumar</strong>. Suggestions for new tools or categories are welcome.</p>
+      <div class="contact">
+        <a href="https://www.linkedin.com/in/shubham-kumar-sahu-352b175b/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
-    </div>
+    </section>
+  </div>
 
-    <script src="js/arf.js"></script>
+  <footer>ethical-hacking-tools-framework · for authorized security testing &amp; education only</footer>
 
-    <div class="legend"><p>This Tools maybe open source or coomercial tools are not developed by me <br>
-    just the framework is developed by me , This site is Inspired from Osint Framework </p></div>
-
-    <h3>Notes</h3>
-   This Framework is made by shubham kumar , you can contact me 
-
-  <button onclick="window.location.href = 'https://www.facebook.com/SKSDBEST';">FaceBook</button> &ensp;&ensp;
-			<button onclick="window.location.href = 'https://www.linkedin.com/in/shubham-kumar-sahu-352b175b/';">LinkedIn</button>
-			
-
-  </body>
-
+</body>
 </html>
