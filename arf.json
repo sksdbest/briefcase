@@ -318,6 +318,166 @@
       ],
       "name": "Spam",
       "type": "folder"
+    },
+    {
+      "children": [
+        {
+          "name": "Frida",
+          "type": "url",
+          "url": "https://frida.re/"
+        },
+        {
+          "name": "MobSF - Mobile Security Framework",
+          "type": "url",
+          "url": "https://mobsf.github.io/mobile-security-framework-mstf/"
+        },
+        {
+          "name": "JADX - APK Decompiler",
+          "type": "url",
+          "url": "https://github.com/skylot/jadx"
+        },
+        {
+          "name": "APKTool",
+          "type": "url",
+          "url": "https://ibotpeaches.github.io/Apktool/"
+        },
+        {
+          "name": "Burp Suite Mobile Assistant",
+          "type": "url",
+          "url": "https://portswigger.net/burp/documentation/desktop/tools/mobile-assistant"
+        }
+      ],
+      "name": "Mobile Security",
+      "type": "folder"
+    },
+    {
+      "children": [
+        {
+          "name": "OWASP Top 10",
+          "type": "url",
+          "url": "https://owasp.org/www-project-top-ten/"
+        },
+        {
+          "name": "CIS Benchmarks",
+          "type": "url",
+          "url": "https://www.cisecurity.org/cis-benchmarks/"
+        },
+        {
+          "name": "NIST Cybersecurity Framework",
+          "type": "url",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "name": "OWASP API Security",
+          "type": "url",
+          "url": "https://owasp.org/www-project-api-security/"
+        },
+        {
+          "name": "ISO 27001",
+          "type": "url",
+          "url": "https://www.iso.org/isoiec-27001-information-security-management.html"
+        }
+      ],
+      "name": "Frameworks & Guidelines",
+      "type": "folder"
+    },
+    {
+      "children": [
+        {
+          "name": "HackTheBox",
+          "type": "url",
+          "url": "https://www.hackthebox.com/"
+        },
+        {
+          "name": "TryHackMe",
+          "type": "url",
+          "url": "https://tryhackme.com/"
+        },
+        {
+          "name": "VulnHub",
+          "type": "url",
+          "url": "https://www.vulnhub.com/"
+        },
+        {
+          "name": "PentesterLab",
+          "type": "url",
+          "url": "https://pentesterlab.com/"
+        },
+        {
+          "name": "OWASP WebGoat",
+          "type": "url",
+          "url": "https://owasp.org/www-project-webgoat/"
+        },
+        {
+          "name": "PortSwigger Web Security Academy",
+          "type": "url",
+          "url": "https://portswigger.net/web-security"
+        }
+      ],
+      "name": "Training Platforms",
+      "type": "folder"
+    },
+    {
+      "children": [
+        {
+          "name": "OWASP Testing Guide",
+          "type": "url",
+          "url": "https://owasp.org/www-project-web-security-testing-guide/"
+        },
+        {
+          "name": "OSSTMM - Methodology",
+          "type": "url",
+          "url": "https://isecom.org/osstmm.html"
+        },
+        {
+          "name": "PTES - Penetration Testing Execution Standard",
+          "type": "url",
+          "url": "http://www.pentest-standard.org/"
+        },
+        {
+          "name": "NIST SP 800-115 - Testing Guide",
+          "type": "url",
+          "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-115.pdf"
+        },
+        {
+          "name": "Bugcrowd Vulnerability Disclosure Checklists",
+          "type": "url",
+          "url": "https://www.bugcrowd.com/"
+        }
+      ],
+      "name": "Testing Methodologies",
+      "type": "folder"
+    },
+    {
+      "children": [
+        {
+          "name": "NVD - National Vulnerability Database",
+          "type": "url",
+          "url": "https://nvd.nist.gov/"
+        },
+        {
+          "name": "CVE Details",
+          "type": "url",
+          "url": "https://www.cvedetails.com/"
+        },
+        {
+          "name": "Exploit Database",
+          "type": "url",
+          "url": "https://www.exploit-db.com/"
+        },
+        {
+          "name": "VirusShare",
+          "type": "url",
+          "url": "https://virusshare.com/"
+        },
+        {
+          "name": "Malshare",
+          "type": "url",
+          "url": "https://malshare.com/"
+        }
+      ],
+      "name": "Vulnerability Databases",
+      "type": "folder"
     }
   ],
   "name": "Briefcase",
