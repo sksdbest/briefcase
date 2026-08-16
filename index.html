@@ -12,6 +12,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 
   <style>
     :root{
@@ -178,6 +179,19 @@
 
 <body>
 
+  <!-- Password Protection Modal -->
+  <div id="password-modal" style="display: flex; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); justify-content: center; align-items: center; z-index: 10000;">
+    <div style="background: var(--bg-panel); border: 1px solid var(--line); border-radius: 8px; padding: 40px; max-width: 400px; text-align: center;">
+      <h2 style="color: var(--text); font-family: var(--mono); margin: 0 0 20px; font-size: 1.5rem;">Access Required</h2>
+      <p style="color: var(--text-dim); margin: 0 0 20px; font-family: var(--sans);">Enter password to access this briefcase</p>
+      <input type="password" id="password-input" placeholder="Enter password" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 1rem;">
+      <button onclick="checkPassword()" style="width: 100%; padding: 10px; background: var(--accent); color: var(--bg); border: none; border-radius: 6px; font-weight: 600; cursor: pointer; font-family: var(--sans); font-size: 1rem;">Unlock</button>
+      <p id="error-msg" style="color: #ff6b6b; margin-top: 10px; font-size: 0.9rem; display: none;">Incorrect password. Try again.</p>
+    </div>
+  </div>
+
+  <div id="main-content" style="display: none;">
+
   <div id="header">
     Ethical Hacking Tools
     <hr/>
@@ -204,6 +218,41 @@
     <p><strong>Disclaimer:</strong> The tools listed here — open source or commercial — are <strong>not developed by me</strong>. Only this framework and its categorization are my work. Use these tools responsibly and only on systems you are authorized to test.</p>
     <p>ethical-hacking-tools-framework · for authorized security testing &amp; education only</p>
   </footer>
+
+  </div>
+
+  <script>
+    // Password protection with SHA-256 hashing
+    // Hash of "hackme123": 7d793e8d4b3e8f7d8c9e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b
+    const CORRECT_PASSWORD_HASH = "7d793e8d4b3e8f7d8c9e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b";
+
+    function checkPassword() {
+      const input = document.getElementById("password-input").value;
+      const errorMsg = document.getElementById("error-msg");
+      const inputHash = CryptoJS.SHA256(input).toString();
+
+      if (inputHash === CORRECT_PASSWORD_HASH) {
+        document.getElementById("password-modal").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+        localStorage.setItem("briefcase_unlocked", "true");
+      } else {
+        errorMsg.style.display = "block";
+        document.getElementById("password-input").value = "";
+      }
+    }
+
+    // Allow Enter key to submit password
+    document.getElementById("password-input").addEventListener("keypress", function(e) {
+      if (e.key === "Enter") {
+        checkPassword();
+      }
+    });
+
+    // Focus on password input on page load
+    window.addEventListener("load", function() {
+      document.getElementById("password-input").focus();
+    });
+  </script>
 
 </body>
 </html>

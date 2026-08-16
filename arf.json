@@ -3,6 +3,37 @@
     {
       "children": [
         {
+          "name": "OSINT Framework",
+          "type": "url",
+          "url": "https://osintframework.com/"
+        },
+        {
+          "name": "Maltego",
+          "type": "url",
+          "url": "https://www.maltego.com/"
+        },
+        {
+          "name": "TheHarvester",
+          "type": "url",
+          "url": "https://github.com/laramies/theHarvester"
+        },
+        {
+          "name": "Shodan",
+          "type": "url",
+          "url": "https://www.shodan.io/"
+        },
+        {
+          "name": "Recon-ng",
+          "type": "url",
+          "url": "https://github.com/lanmaster53/recon-ng"
+        }
+      ],
+      "name": "Discovery",
+      "type": "folder"
+    },
+    {
+      "children": [
+        {
           "name": "OWASP Top 10",
           "type": "url",
           "url": "https://owasp.org/www-project-top-ten/"
@@ -52,6 +83,11 @@
           "name": "Reverse IP Lookup",
           "type": "url",
           "url": "https://www.abuseipdb.com/"
+        },
+        {
+          "name": "MXToolbox",
+          "type": "url",
+          "url": "https://mxtoolbox.com/"
         }
       ],
       "name": "Domain / DNS",
@@ -86,6 +122,201 @@
         }
       ],
       "name": "Vulnerability Scanning",
+      "type": "folder"
+    },
+    {
+      "children": [
+        {
+          "name": "VirusTotal",
+          "type": "url",
+          "url": "https://www.virustotal.com/"
+        },
+        {
+          "name": "Hybrid Analysis",
+          "type": "url",
+          "url": "https://www.hybrid-analysis.com/"
+        },
+        {
+          "name": "Any.run",
+          "type": "url",
+          "url": "https://any.run/"
+        },
+        {
+          "name": "Joe Sandbox",
+          "type": "url",
+          "url": "https://www.joesecurity.org/"
+        },
+        {
+          "name": "Cuckoo Sandbox",
+          "type": "url",
+          "url": "https://cuckoosandbox.org/"
+        },
+        {
+          "name": "Metadefender",
+          "type": "url",
+          "url": "https://metadefender.opswat.com/"
+        }
+      ],
+      "name": "Malware Scanning",
+      "type": "folder"
+    },
+    {
+      "children": [
+        {
+          "name": "Aircrack-ng",
+          "type": "url",
+          "url": "https://www.aircrack-ng.org/"
+        },
+        {
+          "name": "Wireshark",
+          "type": "url",
+          "url": "https://www.wireshark.org/"
+        },
+        {
+          "name": "Hashcat",
+          "type": "url",
+          "url": "https://hashcat.net/"
+        },
+        {
+          "name": "Airmon-ng",
+          "type": "url",
+          "url": "https://www.aircrack-ng.org/doku.php?id=airmon-ng"
+        },
+        {
+          "name": "Reaver",
+          "type": "url",
+          "url": "https://github.com/t6x/reaver-wps"
+        },
+        {
+          "name": "Bettercap",
+          "type": "url",
+          "url": "https://www.bettercap.org/"
+        },
+        {
+          "name": "Kismet",
+          "type": "url",
+          "url": "https://www.kismetwireless.net/"
+        }
+      ],
+      "name": "WiFi Hacking",
+      "type": "folder"
+    },
+    {
+      "children": [
+        {
+          "name": "Shodan",
+          "type": "url",
+          "url": "https://www.shodan.io/"
+        },
+        {
+          "name": "Firmwalker",
+          "type": "url",
+          "url": "https://github.com/rampagingcat/firmwalker"
+        },
+        {
+          "name": "Binwalk",
+          "type": "url",
+          "url": "https://github.com/ReFirmLabs/binwalk"
+        },
+        {
+          "name": "RouterSploit",
+          "type": "url",
+          "url": "https://github.com/threat9/routersploit"
+        },
+        {
+          "name": "Nmap NSE Scripts",
+          "type": "url",
+          "url": "https://nmap.org/nsedoc/"
+        },
+        {
+          "name": "Metasploit IoT Modules",
+          "type": "url",
+          "url": "https://www.metasploit.com/"
+        },
+        {
+          "name": "CVE Details",
+          "type": "url",
+          "url": "https://www.cvedetails.com/"
+        }
+      ],
+      "name": "IoT Hacking",
+      "type": "folder"
+    },
+    {
+      "children": [
+        {
+          "name": "Wireshark - Protocol Analysis",
+          "type": "url",
+          "url": "https://www.wireshark.org/"
+        },
+        {
+          "name": "Modbus/TCP Scanner",
+          "type": "url",
+          "url": "https://github.com/modbusmaster/modbus-scanner"
+        },
+        {
+          "name": "PLCopen Security",
+          "type": "url",
+          "url": "https://plcopen.org/security"
+        },
+        {
+          "name": "ICS/SCADA Honeypot",
+          "type": "url",
+          "url": "https://github.com/mushorg/conpot"
+        },
+        {
+          "name": "Nessus ICS Plugin",
+          "type": "url",
+          "url": "https://www.tenable.com/products/nessus"
+        },
+        {
+          "name": "SHODAN Industrial Control",
+          "type": "url",
+          "url": "https://www.shodan.io/"
+        },
+        {
+          "name": "CISA ICS Alerts",
+          "type": "url",
+          "url": "https://www.cisa.gov/news-events"
+        }
+      ],
+      "name": "SCADA Hacking",
+      "type": "folder"
+    },
+    {
+      "children": [
+        {
+          "name": "Emkei - Mail Bomber",
+          "type": "url",
+          "url": "https://emkei.cz/"
+        },
+        {
+          "name": "Call Bomberz - Fake Calls",
+          "type": "url",
+          "url": "https://www.callbomberz.in/"
+        },
+        {
+          "name": "SMS Bomber - Text Bombing",
+          "type": "url",
+          "url": "https://github.com/topics/sms-bomber"
+        },
+        {
+          "name": "Mailbomber Tools",
+          "type": "url",
+          "url": "https://github.com/search?q=mailbomber"
+        },
+        {
+          "name": "Tempmail - Disposable Email",
+          "type": "url",
+          "url": "https://temp-mail.org/"
+        },
+        {
+          "name": "10Minutemail",
+          "type": "url",
+          "url": "https://10minutemail.com/"
+        }
+      ],
+      "name": "Spam",
       "type": "folder"
     }
   ],
